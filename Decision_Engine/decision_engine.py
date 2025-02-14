@@ -22,9 +22,9 @@ load_dotenv()
 # Set environment variables for LangChain tracing and your project details.
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
-os.environ["LANGCHAIN_PROJECT"] = "pr-definite-forever-12"
-os.environ["LANGCHAIN_MODEL"] = "gemini-1.5-pro"
+os.environ["LANGCHAIN_API_KEY"] = "api_key"
+os.environ["LANGCHAIN_PROJECT"] = "project_name"
+os.environ["LANGCHAIN_MODEL"] = "llm"
 user_stats = {}
 role_hierarchy = []
 # File where user stats are persisted.
@@ -239,26 +239,7 @@ Tools attached:
         response = self.model.invoke(messages)
         ai_content = response.content.strip() if response.content else ""
 
-        # # Remove markdown code block formatting if present
-        # markdown_pattern = r"^```(?:json)?\s*([\s\S]+?)\s*```$"
-        # match = re.match(markdown_pattern, ai_content)
-        # if match:
-        #     ai_content = match.group(1).strip()
-
-        # Update the state's messages with the AI's response.
         return {"messages": [response]}
-
-        # Attempt to parse the decision output and store it.
-        # try:
-        #     decision_output = json.loads(ai_content)
-        # except json.JSONDecodeError:
-        #     print(f"Error parsing decision output: {ai_content}")
-        #     decision_output = []
-        
-        # if isinstance(decision_output, list) and decision_output:
-        #     with self.decisions_lock:
-        #         self.decisions.extend(decision_output)
-        #         self._save_decisions()
 
         
 
