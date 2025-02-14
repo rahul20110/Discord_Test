@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2025-02-14 15:21:42",
+    "user_id": "894899816503603200",
+    "user_name": "ujjwalgodara9",
+    "old_roles": [],
+    "new_role": "Helper2",
+    "action": "degrade_role",
+    "reason": "No replies and warnings exceed threshold in last 24 hours"
+  }
+]

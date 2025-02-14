@@ -1,0 +1,9 @@
+[
+  {
+    "user_id": "1296119752254685249",
+    "action": "degrade_role",
+    "role": "Helper2",
+    "reason": "User met the criteria for role demotion.",
+    "human_intervention": false
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-02-14 20:49:26",
+    "user_id": "894899816503603200",
+    "user_name": "ujjwalgodara9",
+    "old_roles": [],
+    "new_role": "Helper2",
+    "action": "degrade_role",
+    "reason": "No replies and warnings exceed threshold in last 24 hours"
+  },
+  {
+    "timestamp": "2025-02-14 21:37:29",
+    "user_id": "1296119752254685249",
+    "user_name": "dhavalsangoi",
+    "old_roles": [
+      "Moderator"
+    ],
+    "new_role": "Helper2",
+    "action": "degrade_role",
+    "reason": "User met the criteria for role demotion."
+  }
+]

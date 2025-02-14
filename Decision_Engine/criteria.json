@@ -1,0 +1,9 @@
+[
+    {
+        "id": "criteria_1739527736",
+        "original_message": "Move the user from Moderator role to Helper 2 role if user user has sent 5 messages anytime,user has replied two messages of other users and not of himself and sent atleast 1 vulgar messages",
+        "timestamp": "2025-02-14T15:38:56.086591",
+        "enabled": true,
+        "priority":7
+    }
+]
